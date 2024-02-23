@@ -1,0 +1,22 @@
+.quiz {
+  width: 125rem;
+  padding: 0rem 2.5rem;
+}
+
+@media screen and (max-width: 715px) {
+  .quiz {
+    width: 100rem;
+  }
+}
+
+@media screen and (max-width: 565px) {
+  .quiz {
+    width: 80rem;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .quiz {
+    width: 60rem;
+  }
+}

@@ -1,0 +1,41 @@
+.finish__container__score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 1rem; */
+}
+
+.finish__score {
+  font-size: 12rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+}
+
+.finish__score__greeting {
+  font-size: 2.6rem;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .finish__score {
+    font-size: 9rem;
+  }
+
+  .finish__score__greeting {
+    font-size: 2.4rem;
+    margin-top: -1rem;
+  }
+}
+
+.finish__score__color__low {
+  color: #f03e3e;
+}
+.finish__score__color__medium {
+  color: #f59f00;
+}
+.finish__score__color__high {
+  color: #40c057;
+}
