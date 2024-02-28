@@ -40,17 +40,18 @@ function QuizControls({ currentQuestion, setCurrentQuestion }) {
             Next
           </button>
         )}
-        {userAnswers.length === questions.length && (
-          <button
-            onClick={() => {
-              setFinishedQuiz(true);
-              console.log("clicked");
-            }}
-            className={classes.quiz__controls__btn}
-          >
-            Finish
-          </button>
-        )}
+        {userAnswers.length === questions.length &&
+          currentQuestion + 1 === questions.length && (
+            <button
+              onClick={() => {
+                setFinishedQuiz(true);
+                console.log("clicked");
+              }}
+              className={classes.quiz__controls__btn}
+            >
+              Finish
+            </button>
+          )}
       </div>
     </div>
   );
